@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/qmui_config_color_25_white"
+    android:layout_height="match_parent">
+    <com.qmuiteam.qmui.widget.QMUITopBar
+        android:id="@+id/topbar"
+        android:layout_marginTop="19dp"
+        app:qmui_topbar_title_color="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/qmui_topbar_height"/>
+    <LinearLayout
+        android:id="@+id/lineyout1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            style="@style/linerlayout1">
+            <ImageView
+                style="@style/saoyisao_img"/>
+            <TextView
+                style="@style/Text1"
+                android:text="扫一扫"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerlayout1">
+            <ImageView
+                style="@style/saoyisao_img"/>
+            <TextView
+                style="@style/Text1"
+                android:text="收款码"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerlayout1">
+            <ImageView
+                style="@style/saoyisao_img"/>
+            <TextView
+                style="@style/Text1"
+                android:text="智慧码"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineyout2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            style="@style/linerlayout2">
+            <ImageView
+                style="@style/kaquanshoukuan_img"/>
+            <TextView
+                style="@style/Text2"
+                android:text="卡券收款"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerlayout2">
+            <ImageView
+                style="@style/kaquanshoukuan_img"/>
+            <TextView
+                style="@style/Text2"
+                android:text="卡券核销"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linerlayout2">
+            <ImageView
+                style="@style/kaquanshoukuan_img"/>
+            <TextView
+                style="@style/Text2"
+                android:text="退款"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/head_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/qmui_config_color_white">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <!-- 图片描述文字 -->
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="xx日收款"
+                android:textColor="@color/qmui_config_color_black"
+                android:textSize="16sp" />
+            <!-- 第几张图片，共几张图片 -->
+            <TextView
+                android:id="@+id/tv_ratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="0.00"
+                android:textColor="@color/qmui_config_color_red"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="(共计几笔)"
+                android:textColor="@color/qmui_config_color_gray_1"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
