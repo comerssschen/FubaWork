@@ -26,6 +26,7 @@ public class CensusFragment extends BaseFragment {
 
     @Override
     protected void initView(View view) {
+        
     }
 
     @Override
